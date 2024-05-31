@@ -1,25 +1,25 @@
 initial_point:
   initial_x: 0.0
   initial_y: 0.0
-  initial_z: 0.1
-map: /home/administrator/HV_monitoring/maps/HVLab4.yaml
+  initial_z: 0.707
+map: /home/harry/HV_monitoring/maps/HVLab4
 point1:
   Complete: 1
-  x: 2.33
-  y: -0.72
+  x: 1.8
+  y: -1.33
   z: 0.707
 point2:
   Complete: 1
-  x: 6.2
-  y: 2.07
+  x: 5.51
+  y: 1.55
   z: 0.707
 point3:
   Complete: 1
-  x: 2.87
-  y: 4.98
+  x: 9.69
+  y: -0.085
   z: 0.707
 point4:
-  Complete: 0
-  x: -0.8
-  y: 1.78
-  z: 0.1504630436790426
+  Complete: 1
+  x: 8.0
+  y: 6.83
+  z: 0.9033479326566828

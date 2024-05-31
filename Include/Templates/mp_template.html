@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add your custom CSS styles here */
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%; /* Adjust as needed */
+        }
+        th{
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+            width: 20%; /* Adjust based on the number of columns */
+            height: 10px; /* Adjust as needed */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-family: 'Arial', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+            width: 20%; /* Adjust based on the number of columns */
+            height: 325px; /*170 px = A4*/
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        th:first-child, td:first-child {
+            width: 2%; /* Adjust as needed */
+        }
+        th, td:first-child {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(4n) { /* Adjust the number as needed */
+            page-break-after: always;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+        .custom-font{
+            font-family: 'Arial', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>{{ mp }}</th> <!-- change to variable in actual script-->
+                    <th>Pan {{ pan }}° ({{ x }})</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="custom-font">Tilt<br>0°</td>
+                    <td></td> <!-- Empty cell for image -->
+                    
+                </tr>
+                <tr>
+                    <td class="custom-font">Tilt<br>20°</td>
+                    <td></td> <!-- Empty cell for image -->
+                </tr>
+                <tr>
+                    <td class="custom-font">Tilt<br>40°</td>
+                    <td></td> <!-- Empty cell for image -->
+                </tr>
+                <tr>
+                    <td class="custom-font">Tilt<br>60°</td>
+                    <td></td> <!-- Empty cell for image -->
+                </tr>
+                <!-- ... Add more rows for different tilt angles ... -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

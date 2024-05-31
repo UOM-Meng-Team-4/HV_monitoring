@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            font-size: 3em;
+            font-weight: normal;
+            color: black;
+        }
+        th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            color: black;
+        }
+        caption{
+            font-size: 3em;
+            font-weight: bold;
+        }
+        #legend {
+            margin-top: 50em;
+        }
+        #content {
+            text-align: center;
+        }
+        #title {
+            font-size: 7em;
+            margin-bottom: 0.5em;
+
+        }
+        #date {
+            font-size: 5em;
+            padding: 10px 0;
+        }
+        #time {
+            font-size: 5em;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="title">Substation Scan</div>
+        <div id="date">Date: {{ date }}</div>
+        <div id="time">Time: {{ time }}</div>
+    
+    <div id="legend">
+        <table>
+            <caption>Legend</caption>
+            <tr>
+                <td>Hotspot Temperature</td>
+                <td>PD detection</td>
+            </tr>
+            <tr>
+                <td style="background-color: green;">11°C < hotspot temp < 20°C</td>
+                <td>>15 dB</td>
+            </tr>
+            <tr>
+                <td style="background-color: orange;">20°C < hotspot temp <= 40°C</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="background-color: red;">hotspot temp > 40°C</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</body>
+</html>

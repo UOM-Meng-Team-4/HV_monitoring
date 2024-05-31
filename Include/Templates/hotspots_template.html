@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Highlights</title>
+    <style>
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            flex-grow: 1;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        td:first-child, th:first-child {
+            width: 5%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        tr {
+            font-size: 25px;
+            height: 50px; 
+            text-align: center;
+        }
+        tr:first-child {
+            height: 50px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .blank-row {
+            height: 920px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Highlights</h1>
+        <table>
+            <tr>
+                <th>MP</th>
+                <th>Thermal Hotspots</th>
+                <th>Partial Discharge</th>
+            </tr>
+            
+            {% for i in range(num_measurement_points) %}
+                {% for j in range(mp[i]) %}
+                    <tr>
+                        <td>{{ i+1 }}</td>
+                        <td>{{ thermal_hotspots[i][j] }}</td>
+                        <td>{{ ac_hotspots[i][j] }}</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+            
+            
+
+
+            <!-- {% for i in range(num_measurement_points) %}
+                {% for hotspot in thermal_hotspots %}
+                    <tr>
+                        <td>{{ i+1 }}</td>
+                        <td>{{ hotspot }}</td>
+                        <td>{{ ac_hotspots[loop.index0] if loop.index0 < ac_hotspots|length else 'N/A' }}</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %} -->
+        </table>
+    </body>
+</html>
