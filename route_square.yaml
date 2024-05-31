@@ -1,0 +1,25 @@
+initial_point:
+  initial_x: 0.0
+  initial_y: 0.0
+  initial_z: 0.1
+map: /home/administrator/HV_monitoring/maps/2b0022.yaml
+point1:
+  Complete: 1
+  x: 1.23
+  y: 0.73
+  z: 0.707
+point2:
+  Complete: 1
+  x: 1.23
+  y: -0.949
+  z: 0.707
+point3:
+  Complete: 1
+  x: -1.23
+  y: -0.949
+  z: 0.707
+point4:
+  Complete: 1
+  x: -1.23
+  y: 0.949
+  z: 0.8050656866275014
