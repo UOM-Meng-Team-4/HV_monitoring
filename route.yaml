@@ -5,6 +5,21 @@ initial_point:
 map: /home/harry/HV_monitoring/maps/2b0022
 point1:
   Complete: 1
-  x: 1.23
-  y: 0.73
+  x: 1.03
+  y: 0.43
   z: 0.5035751170549738
+point2:
+  Complete: 1
+  x: -1.03
+  y: 0.43
+  z: 0.5035751170549738
+point3:
+  Complete: 1
+  x: -1.03
+  y: -0.43
+  z: 0.5035751170549738
+point4:
+  Complete: 1
+  x: 1.03
+  y: -0.43
+  z: 0.052084188413122796
