@@ -1,25 +1,20 @@
 initial_point:
   initial_x: 0.0
   initial_y: 0.0
-  initial_z: 0.1
-map: /home/administrator/HV_monitoring/maps/2b0022
+  initial_z: 0.0
+map: /home/administrator/HV_monitoring/maps/square
 point1:
   Complete: 1
   x: 1.03
-  y: 0.43
+  y: 0.73
   z: 0.5035751170549738
 point2:
   Complete: 1
-  x: -1.03
-  y: 0.43
+  x: 1.03
+  y: -0.73
   z: 0.5035751170549738
 point3:
   Complete: 1
   x: -1.03
-  y: -0.43
-  z: 0.5035751170549738
-point4:
-  Complete: 1
-  x: 1.03
-  y: -0.43
-  z: 0.052084188413122796
+  y: 0.0
+  z: 0.9768187460649526
