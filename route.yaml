@@ -5,8 +5,8 @@ initial_point:
 map: /home/administrator/HV_monitoring/maps/HVLab4
 point1:
   Complete: 1
-  x: 1.8
-  y: -0.5
+  x: 1.9
+  y: 1.1
   z: 0.707
 point2:
   Complete: 1
@@ -16,10 +16,5 @@ point2:
 point3:
   Complete: 1
   x: 9.69
-  y: -0.085
+  y: 0.3
   z: 0.707
-point4:
-  Complete: 1
-  x: 8.0
-  y: 6.83
-  z: 0.9282011007901501
